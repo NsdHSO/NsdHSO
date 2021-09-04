@@ -24,7 +24,11 @@ I am also an open-source enthusiast and maintainer. I want to learn a lot from t
 📊 **this week i spent my time on:**
 <!--START_SECTION:waka-->
 ```text
-No Activity tracked this Week
+Markdown     8 mins          ███████▒░░░░░░░░░░░░░░░░░   29.05 % 
+TypeScript   8 mins          ██████▓░░░░░░░░░░░░░░░░░░   27.30 % 
+JavaScript   4 mins          ███▓░░░░░░░░░░░░░░░░░░░░░   14.41 % 
+Git Config   3 mins          ███▒░░░░░░░░░░░░░░░░░░░░░   13.25 % 
+PowerShell   2 mins          █▓░░░░░░░░░░░░░░░░░░░░░░░   07.19 % 
 ```
 <!--END_SECTION:waka-->
 
