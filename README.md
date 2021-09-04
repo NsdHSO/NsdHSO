@@ -23,11 +23,6 @@ I am also an open-source enthusiast and maintainer. I want to learn a lot from t
 
 📊 **this week i spent my time on:**
 <!--START_SECTION:waka-->
-```text
-TS          10 hrs 31 mins   ███████████████░   98.54 % 
-SASS        1 hrs 46 mins    ░░░░░░░░░░░░░░░█   1.46 % 
-
-```
 <!--END_SECTION:waka-->
 
 if you like what i do, maybe consider buying me a coffee/tea 🥺👉👈
