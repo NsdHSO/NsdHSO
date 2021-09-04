@@ -2,7 +2,7 @@
 
 
 
-hi, i'm [Nechiforel Daivid](), a passionate self-taught web developer and a freelance software engineer from everywhere.
+hi, i'm [Nechiforel Daivid](https://github.com/NsdHSO/NsdHSO/blob/main/README.md), a passionate self-taught web developer and a freelance software engineer from everywhere.
 
 I am also an open-source enthusiast and maintainer. I want to learn a lot from the open-source community and, I love how collaboration and knowledge sharing happened through open-source.
 
