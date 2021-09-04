@@ -23,6 +23,9 @@ I am also an open-source enthusiast and maintainer. I want to learn a lot from t
 
 📊 **this week i spent my time on:**
 <!--START_SECTION:waka-->
+```text
+No Activity tracked this Week
+```
 <!--END_SECTION:waka-->
 
 if you like what i do, maybe consider buying me a coffee/tea 🥺👉👈
