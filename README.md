@@ -23,6 +23,11 @@ I am also an open-source enthusiast and maintainer. I want to learn a lot from t
 
 📊 **this week i spent my time on:**
 <!--START_SECTION:waka-->
+🔥 Editors: 
+
+
+💬 Programming Languages: 
+
 ```text
 Markdown     8 mins          ███████▒░░░░░░░░░░░░░░░░░   29.05 % 
 TypeScript   8 mins          ██████▓░░░░░░░░░░░░░░░░░░   27.30 % 
