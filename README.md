@@ -25,7 +25,7 @@ I am also an open-source enthusiast and maintainer. I want to learn a lot from t
 
 [![wakatime](https://wakatime.com/badge/github/NsdHSO/vorkurt.svg)](https://wakatime.com/badge/github/NsdHSO/vorkurt)
 
-📊 **this week i spent my time on:**
+📊 **this day i spent my time on:**
 <!--START_SECTION:waka-->
 ```text
 TypeScript   4 hrs 58 mins   ███████████▓░░░░░░░░░░░░░   46.74 % 
