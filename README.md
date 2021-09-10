@@ -1,7 +1,9 @@
+  <img align="right" alt="GIF" src="https://github.com/NsdHSO/profile/blob/main/project-app.gif" width="100%"  />
+
+
 ### hey there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 
-  <img align="right" alt="GIF" src="https://github.com/NsdHSO/profile/blob/main/project-app.gif" width="auto" height="auto" />
-
+<
 
 hi, i'm [Nechiforel Daivid](https://github.com/NsdHSO/NsdHSO/blob/main/README.md), a passionate self-taught web developer and a freelance software engineer from everywhere.
 
