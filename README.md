@@ -3,7 +3,7 @@
 
 ### hey there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 
-<
+
 
 hi, i'm [Nechiforel Daivid](https://github.com/NsdHSO/NsdHSO/blob/main/README.md), a passionate self-taught web developer and a freelance software engineer from everywhere.
 
