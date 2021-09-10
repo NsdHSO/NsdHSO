@@ -7,7 +7,7 @@ hi, i'm [Nechiforel Daivid](https://github.com/NsdHSO/NsdHSO/blob/main/README.md
 I am also an open-source enthusiast and maintainer. I want to learn a lot from the open-source community and, I love how collaboration and knowledge sharing happened through open-source.
 
 
-  <img align="right" alt="GIF" src="https://github.com/NsdHSO/profile/blob/main/project-app.gif" width="498" height="520" />
+  <img align="right" alt="GIF" src="https://github.com/NsdHSO/profile/blob/main/project-app.gif" width="auto" height="auto" />
 
 - 💼  any freelance work? do reach, [email](nechiforelsamuel@yahoo.com) :)
 - 💬  ask me about anything, i am happy to help;
