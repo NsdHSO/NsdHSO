@@ -25,6 +25,9 @@ I am also an open-source enthusiast and maintainer. I want to learn a lot from t
 
 [![wakatime](https://wakatime.com/badge/github/NsdHSO/vorkurt.svg)](https://wakatime.com/badge/github/NsdHSO/vorkurt)
 
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=NsdHSO)](https://github.com/NsdHSO/NsdHSO)
+
+
 📊 **this day i spent my time on:**
 <!--START_SECTION:waka-->
 ```text
