@@ -28,7 +28,7 @@ I am also an open-source enthusiast and maintainer. I want to learn a lot from t
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=NsdHSO&show_icons=true&theme=dracula)](https://github.com/NsdHSO/NsdHSO)
 
 
-📊 **this day i spent my time on:**
+📊 **this week i spent my time on:**
 <!--START_SECTION:waka-->
 ```text
 TypeScript   19 hrs 20 mins  ███████████████████▓░░░░░   78.89 % 
