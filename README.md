@@ -37,16 +37,6 @@ SCSS         10 mins         ▒░░░░░░░░░░░░░░░░
 ```
 <!--END_SECTION:waka-->
 
-<!--START_SECTION:waka-->
-```text
-TypeScript   19 hrs 16 mins  ████████████████████░░░░░   80.21 % 
-HTML         2 hrs 35 mins   ██▓░░░░░░░░░░░░░░░░░░░░░░   10.75 % 
-JSON         1 hr 19 mins    █▒░░░░░░░░░░░░░░░░░░░░░░░   05.53 % 
-JavaScript   31 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.18 % 
-SCSS         10 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.70 % 
-```
-<!--END_SECTION:waka-->
-
 if you like what i do, maybe consider buying me a coffee/tea 🥺👉👈
 
 <a href="https://www.buymeacoffee.com/HSOD" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="150" ></a>
