@@ -23,7 +23,6 @@ I am also an open-source enthusiast and maintainer. I want to learn a lot from t
 
 [![wakatime](https://wakatime.com/badge/github/NsdHSO/vorkurt.svg)](https://wakatime.com/badge/github/NsdHSO/vorkurt)
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=NsdHSO&show_icons=true&theme=dracula)](https://github.com/NsdHSO/NsdHSO)
 
 
 📊 **this week i spent my time on:**
