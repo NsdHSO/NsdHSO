@@ -4,7 +4,7 @@ name: wakatime stats
 on:
   workflow_dispatch:
   schedule:
-    - cron: "13 */6 * * *"
+    - cron: "0 0,8,14,17,20,23 * * *"
 
 jobs:
   build:
