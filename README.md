@@ -33,7 +33,7 @@ I am also an open-source enthusiast and maintainer. I want to learn a lot from t
 
 **🐱 My GitHub Data** 
 
-> 🏆 106 Contributions in the Year 2021
+> 🏆 112 Contributions in the Year 2021
  > 
 > 📦 34.1 kB Used in GitHub's Storage 
  > 
@@ -95,7 +95,7 @@ Java                     1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 26/09/2021
+ Last Updated on 27/09/2021
 <!--END_SECTION:waka-->
 
 if you like what i do, maybe consider buying me a coffee/tea 🥺👉👈
