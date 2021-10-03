@@ -35,7 +35,7 @@ I am also an open-source enthusiast and maintainer. I want to learn a lot from t
 
 > 🏆 120 Contributions in the Year 2021
  > 
-> 📦 33.5 kB Used in GitHub's Storage 
+> 📦 33.7 kB Used in GitHub's Storage 
  > 
 > 💼 Opted to Hire
  > 
