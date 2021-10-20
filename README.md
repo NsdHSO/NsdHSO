@@ -33,13 +33,13 @@ I am also an open-source enthusiast and maintainer. I want to learn a lot from t
 
 **🐱 My GitHub Data** 
 
-> 🏆 137 Contributions in the Year 2021
+> 🏆 138 Contributions in the Year 2021
  > 
 > 📦 36.5 kB Used in GitHub's Storage 
  > 
 > 💼 Opted to Hire
  > 
-> 📜 19 Public Repositories 
+> 📜 20 Public Repositories 
  > 
 > 🔑 12 Private Repositories  
  > 
