@@ -24,6 +24,7 @@ I am also an open-source enthusiast and maintainer. I want to learn a lot from t
 
 ![NsdHSO's github activity graph](https://activity-graph.herokuapp.com/graph?username=NsdHSO&theme=dracula)
 
+![NsdHSO's Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=NsdHSO&layout=compact&theme=radical)
 
 
 [![wakatime](https://wakatime.com/badge/github/NsdHSO/vorkurt.svg)](https://wakatime.com/badge/github/NsdHSO/vorkurt)
