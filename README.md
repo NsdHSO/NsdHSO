@@ -21,6 +21,11 @@ I am also an open-source enthusiast and maintainer. I want to learn a lot from t
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"></code>
 
+
+![NsdHSO's github activity graph](https://activity-graph.herokuapp.com/graph?username=NsdHSO&theme=dracula)
+
+
+
 [![wakatime](https://wakatime.com/badge/github/NsdHSO/vorkurt.svg)](https://wakatime.com/badge/github/NsdHSO/vorkurt)
 
 
