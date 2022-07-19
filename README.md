@@ -27,16 +27,18 @@ I am also an open-source enthusiast and maintainer. I want to learn a lot from t
 ![NsdHSO's Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=NsdHSO&layout=compact&theme=radical)
 
 
-[![wakatime](https://wakatime.com/badge/github/NsdHSO/vorkurt.svg)](https://wakatime.com/badge/github/NsdHSO/vorkurt)
+if you like what i do, maybe consider buying me a coffee/tea 🥺👉👈
+
+<a href="https://www.buymeacoffee.com/NsdHSO" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Book" width="150" ></a>
 
 
 
 📊 **this week i spent my time on:**
-<img align="center" src="/github-metrics.svg" alt="Metrics" width="400">
 
-if you like what i do, maybe consider buying me a coffee/tea 🥺👉👈
 
-<a href="https://www.buymeacoffee.com/NsdHSO" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Book" width="150" ></a>
+<img src="./static/github-metrics.svg" alt="Metrics" width="100%">
+
+
 
 
 
