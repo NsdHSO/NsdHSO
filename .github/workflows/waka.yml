@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: lowlighter/metrics@v3.16
         with:
-          token: ${{ secrets.METRIC }}
+          token: ${{ secrets.GIT_TOKEN }}
           filename: static/github-metrics.*
           config_padding: 0, 20
           committer_message: "chore: update github metrics [skip ci]"
