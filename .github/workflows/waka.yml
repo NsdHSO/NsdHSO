@@ -1,17 +1,69 @@
-name: Metrics
+name: GitHub Metrics
+
 on:
-  # Schedule daily updates
-  schedule: [{cron: "0 0 * * *"}]
-  # (optional) Run workflow manually
   workflow_dispatch:
-  # (optional) Run workflow when pushing on master/main
-  push: {branches: ["master", "main"]}
+  schedule:
+    - cron: "10 * * * *"
+  push:
+    branches:
+      - main
+
 jobs:
-  github-metrics:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@v3.16
         with:
-          token: ${{ secrets.GITHUB_TOKEN  }}         
+          token: ${{ secrets.GITHUB_TOKEN  }}
+          filename: static/github-metrics.*
+          config_padding: 0, 20
+          committer_message: "chore: update github metrics [skip ci]"
+
+          # Options
+          user: NsdHSO
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Africa/Harare
+          config_display: large
+
+          # Achievements
+          plugin_achievements: yes
+          plugin_achievements_threshold: S
+          plugin_achievements_secrets: yes
+          plugin_achievements_display: detailed
+
+          # Activity
+          plugin_activity: no
+          plugin_activity_days: 30
+          plugin_activity_filter: all
+          plugin_activity_limit: 5
+          plugin_activity_load: 500
+          plugin_activity_timestamps: yes
+          plugin_activity_visibility: all
+
+          # Discussions
+          plugin_discussions: yes
+
+          # Isocalendar
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+
+          # Lines
+          plugin_lines: yes
+
+          # People
+          plugin_people: yes
+          plugin_people_limit: 72
+          plugin_people_size: 30
+          plugin_people_thanks: bdougie, mtfoley
+          plugin_people_types: followers, following
+
+          # WakaTime
+          plugin_wakatime: yes
+          plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
+          plugin_wakatime_days: 30
+          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, editors-graphs
+          plugin_wakatime_limit: 5
+          plugin_wakatime_url: https://wakatime.com
+          plugin_wakatime_user: vortex
