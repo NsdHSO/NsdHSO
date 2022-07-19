@@ -1,29 +1,17 @@
 name: Metrics
 on:
-  # Schedule updates (each hour)
-  schedule: [{cron: "0 0,8,14,17,20,23 * * *"}]
-  # Lines below let you run workflow manually and on each commit
+  # Schedule daily updates
+  schedule: [{cron: "0 0 * * *"}]
+  # (optional) Run workflow manually
   workflow_dispatch:
+  # (optional) Run workflow when pushing on master/main
   push: {branches: ["master", "main"]}
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # Your GitHub token
-          token: ${{ secrets.METRICS_TOKEN }}
-          # Options
-          user: NsdHSO
-          template: classic
-          base: header, activity, community, repositories, metadata
-          config_timezone: Europe/Bucharest
-          plugin_traffic: yes
-          plugin_wakatime: yes
-          plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
-          plugin_wakatime_days: 30
-          plugin_wakatime_sections: time, languages, languages-graphs, editors, editors-graphs
-          plugin_wakatime_limit: 5
-          plugin_wakatime_url: https://wakatime.com
-          plugin_wakatime_user: NsdHSO
-
+          token: ${{ secrets.GITHUB_TOKEN  }}         
