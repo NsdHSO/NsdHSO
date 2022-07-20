@@ -33,7 +33,7 @@ if you like what i do, maybe consider buying me a coffee/tea 🥺👉👈
 
 
 
-📊 **this week i spent my time on:**
+📊 ** i spent my time on:**
 
 
 <img src="./static/github-metrics.svg" alt="Metrics" width="100%">
