@@ -33,7 +33,7 @@ I am also an open-source enthusiast and maintainer. I want to learn a lot from t
 
 if you like what i do, maybe consider buying me a coffee/tea 🥺👉👈
 
-<a href="https://www.buymeacoffee.com/NsdHSO" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Book" width="450" ></a>
+<a href="https://www.buymeacoffee.com/NsdHSO" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Book" width="250" ></a>
 
 
 
