@@ -56,7 +56,7 @@ jobs:
           plugin_people: yes
           plugin_people_limit: 72
           plugin_people_size: 30
-          plugin_people_thanks: bdougie, mtfoley
+          plugin_people_thanks: bdougie
           plugin_people_types: followers, following
 
           # WakaTime
