@@ -28,9 +28,6 @@ I am also an open-source enthusiast and maintainer. I want to learn a lot from t
 
 ![NsdHSO's github activity graph](https://activity-graph.herokuapp.com/graph?username=NsdHSO&theme=dracula)
 
-![NsdHSO's Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=NsdHSO&layout=compact&theme=radical)
-
-
 if you like what i do, maybe consider buying me a Book 🥺👉👈
 
 <a href="https://www.buymeacoffee.com/NsdHSO" target="_blank"><img src="https://pbs.twimg.com/profile_images/1472490550/logo300_400x400.jpg" alt="Buy Me A Book" width="250" height="100"></a>
