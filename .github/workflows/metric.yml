@@ -35,7 +35,7 @@ jobs:
 
           # Activity
           plugin_activity: no
-          plugin_activity_days: 30
+          plugin_activity_days: 90
           plugin_activity_filter: all
           plugin_activity_limit: 5
           plugin_activity_load: 500
