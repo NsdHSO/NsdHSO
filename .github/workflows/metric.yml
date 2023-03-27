@@ -35,9 +35,9 @@ jobs:
 
           # StackOverflow
           plugin_stackoverflow: yes
-          plugin_stackoverflow_user: 1
           plugin_stackoverflow_sections: answers-top
           plugin_stackoverflow_limit: 2
+          plugin_stackoverflow_user: 11555908
 
           # Habits
           plugin_habits: yes
