@@ -24,7 +24,7 @@ jobs:
           user: NsdHSO
           template: classic
           base: header, activity, community, repositories, metadata
-          config_timezone: Africa/Harare
+          config_timezone: Europe/Bucharest
           config_display: large
 
           # Achievements
@@ -32,6 +32,12 @@ jobs:
           plugin_achievements_threshold: S
           plugin_achievements_secrets: yes
           plugin_achievements_display: detailed
+
+          # Habits
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: no
+
 
           # Activity
           plugin_activity: no
