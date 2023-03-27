@@ -27,8 +27,6 @@ I am also an open-source enthusiast and maintainer. I want to learn a lot from t
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"></code>
 
 
-![NsdHSO's github activity graph](https://activity-graph.herokuapp.com/graph?username=NsdHSO&theme=dracula)
-
 if you like what i do, maybe consider buying me a Book 🥺👉👈
 
 <a href="https://www.buymeacoffee.com/NsdHSO" target="_blank"><img src="https://pbs.twimg.com/profile_images/1472490550/logo300_400x400.jpg" alt="Buy Me A Book" width="250" height="100"></a>
