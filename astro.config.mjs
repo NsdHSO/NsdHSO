@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://github.com/nsdhso.github.io/NsdHSO',
-	base: '/cv/',
+	site: 'https://github.com/nsdhso.github.io/',
+	base: '/NsdHSO/',
 	integrations: [mdx(), sitemap()],
 });
