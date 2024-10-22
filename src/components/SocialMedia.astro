@@ -1,0 +1,37 @@
+---
+import { SOCIAL_MEDIA_LINKS } from '../consts';
+const socialLink = SOCIAL_MEDIA_LINKS;
+---
+
+<section>
+    <div class="social-links">
+        {
+            socialLink.map((item, index) => (
+                    <a  href={item.link}>
+                        <span class="sr-only">{item.span}</span>
+
+                        <span set:html={item.icon}>
+
+                        </span>
+                    </a>
+            ))
+        }
+    </div>
+</section>
+<style>
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        margin-top: 1em;
+    }
+
+    .social-links a {
+        text-decoration: none;
+        color: rgb(var(--gray));
+    }
+
+    .social-links a:hover {
+        color: rgb(var(--gray-dark));
+    }
+</style>
