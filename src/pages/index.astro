@@ -2,7 +2,9 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_TITLE, SITE_DESCRIPTION, MY_EXPERIENCES } from '../consts';
+
+const myExperience = MY_EXPERIENCES
 ---
 
 <!doctype html>
@@ -14,7 +16,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Header />
 		<main>
 			<h1>🧑‍🚀 Hello, Here NsdHso!</h1>
-
+			<div class="exp-container">
+			{ myExperience.map((item)=>(
+				<span class=" icon-exp" set:html={item.icon}></span>
+			))}
+			</div>
 		</main>
 		<Footer />
 	</body>
@@ -24,4 +30,19 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	.hero-body{
 		display: flex;
 		flex-direction: column;	}
+	.exp-container{
+		display: grid;
+		grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+		justify-content: center;
+	}
+	.icon-exp{
+		height: 10rem;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+
+		svg{
+		width: calc( 100% - 3rem )
+		}
+	}
 </style>
