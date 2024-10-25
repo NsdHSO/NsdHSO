@@ -1,0 +1,27 @@
+---
+import { MY_EXPERIENCES } from '../consts';
+const myExperience = MY_EXPERIENCES
+---
+
+<div class="exp-container">
+    { myExperience.map((item)=>(
+            <span class=" icon-exp" set:html={item.icon}></span>
+    ))}
+</div>
+<style>
+    .exp-container{
+        display: grid;
+        grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: center;
+    }
+    .icon-exp{
+        height: 10rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        svg{
+            width: calc( 100% - 3rem )
+        }
+    }
+</style>
