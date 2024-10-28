@@ -13,12 +13,22 @@ const myExperience = MY_EXPERIENCES
         display: grid;
         grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
         justify-content: center;
+
+
     }
     .icon-exp{
         height: 10rem;
         display: inline-flex;
         align-items: center;
         justify-content: center;
+
+        &:hover{
+            backdrop-filter: blur(10px);
+            background-color: rgb(255 255 255);
+            cursor: pointer;
+            border-radius: 1rem;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
 
         svg{
             width: calc( 100% - 3rem )
