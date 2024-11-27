@@ -20,6 +20,7 @@ I am also an open-source enthusiast and maintainer. I want to learn a lot from t
 <div style="
     display: inline-flex;
     align-items: center;
+    width:100%;
 ">
     
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"></code>
