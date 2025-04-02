@@ -32,7 +32,9 @@
     font-style: normal;
     font-display: swap;
 }
-
+html{
+    height: 100vh;
+}
 body {
     font-family: 'Atkinson', sans-serif;
     margin: 0;
