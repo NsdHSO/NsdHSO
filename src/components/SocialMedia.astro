@@ -4,19 +4,21 @@ const socialLink = SOCIAL_MEDIA_LINKS;
 ---
 
 <section>
-    <div class="social-links">
+    <ul class="social-links">
         {
             socialLink.map((item, index) => (
-                    <a  href={item.link}>
+                <li tabindex="0">
+                    <a role="button" href={item.link}>
                         <span class="sr-only">{item.span}</span>
 
                         <span set:html={item.icon}>
 
                         </span>
                     </a>
+                </li>
             ))
         }
-    </div>
+    </ul>
 </section>
 <style>
     .social-links {
@@ -24,6 +26,9 @@ const socialLink = SOCIAL_MEDIA_LINKS;
         justify-content: center;
         gap: 1em;
         margin-top: 1em;
+        li{
+            list-style: none;
+        }
     }
 
     .social-links a {
