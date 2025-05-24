@@ -94,6 +94,8 @@ jobs:
           plugin_wakatime_days: 30
           plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, editors-graphs
           plugin_wakatime_limit: 5
+          plugin_wakatime_url: https://wakatime.com
+          plugin_wakatime_user: NSDHSO
 
           # Languages (Polyglot)
           plugin_languages: yes
@@ -107,5 +109,4 @@ jobs:
           plugin_languages_recent_days: 14
           plugin_languages_recent_load: 300
           plugin_languages_indepth: yes
-            plugin_wakatime_url: https://wakatime.com
-            plugin_wakatime_user: NSDHSO
+          
