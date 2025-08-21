@@ -31,10 +31,11 @@ jobs:
           
           # Achievements
           plugin_achievements: yes
-          plugin_achievements_threshold: 'S'
-          plugin_achievements_secrets: 'yes'         
-          plugin_achievements_display: 'detailed'
-          plugin_achievements_limit: '8'
+          plugin_achievements_only: >-
+            polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
+            scripter, packager, explorer, infographile, manager
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: X
 
           # StackOverflow
           plugin_stackoverflow: yes
