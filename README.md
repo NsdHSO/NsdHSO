@@ -40,7 +40,6 @@ if you like what i do, maybe consider buying me a Book 🥺👉👈
 <a href="https://www.buymeacoffee.com/NsdHSO" target="_blank"><img src="https://pbs.twimg.com/profile_images/1472490550/logo300_400x400.jpg" alt="Buy Me A Book" width="250" height="100"></a>
 
 
-
 📊 ** i spent my time on:**
 
 
