@@ -52,6 +52,8 @@ jobs:
           plugin_followup_indepth: yes
           plugin_followup_archived: no
 
+         # Sponsors
+          plugin_sponsors: yes
 
           # Activity
           plugin_activity: no
