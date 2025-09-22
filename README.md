@@ -1,5 +1,5 @@
- <div style="width: 100%;">
-      <div
+ <span style="width: 100%;">
+      <span
         style="
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(382px, 1fr));
@@ -28,8 +28,8 @@
             style="width: 100%; max-width: 382px; height: auto; display: block"
           />
         </a>
-      </div>
-    </div>
+   </span>
+</span>
 
 
 hi, i'm [Nechiforel Daivid](https://github.com/NsdHSO/NsdHSO/blob/main/README.md), a passionate self-taught web developer and a freelance software engineer from everywhere.
