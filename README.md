@@ -1,38 +1,35 @@
-<div style="width: 100%;">
-  <div
-    style="
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(382px, 1fr));
-      justify-content: start;
-      gap: 1rem;
-    "
-  >
-    <a href="https://github.com/nsdhso/tevet-troc-client">
-      <img
-        src="https://denvercoder1-github-readme-stats.vercel.app/api/pin?username=NsdHso&repo=tevet-troc-client&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false"
-        alt="tevet-troc-client"
-        style="width: 100%; max-width: 382px; height: auto; display: block"
-      />
-    </a>
-
-    <a href="https://github.com/nsdhso/hospital">
-      <img
-        src="https://denvercoder1-github-readme-stats.vercel.app/api/pin?username=NsdHso&repo=hospital&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false"
-        alt="hospital"
-        style="width: 100%; max-width: 382px; height: auto; display: block"
-      />
-    </a>
-
-    <a href="https://github.com/nsdhso/liburg">
-      <img
-        src="https://denvercoder1-github-readme-stats.vercel.app/api/pin?username=nsdhso&repo=liburg&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false"
-        alt="liburg"
-        style="width: 100%; max-width: 382px; height: auto; display: block"
-      />
-    </a>
-  </div>
-</div>
-
+ <div style="width: 100%;">
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(382px, 1fr));
+          justify-content: start;
+          gap: 1rem;
+        "
+      >
+        <a href="https://github.com/nsdhso/tevet-troc-client">
+          <img
+            src="https://denvercoder1-github-readme-stats.vercel.app/api/pin?username=NsdHso&repo=tevet-troc-client&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false"
+            alt="tevet-troc-client"
+            style="width: 100%; max-width: 382px; height: auto; display: block"
+          />
+        </a>
+        <a href="https://github.com/nsdhso/hospital">
+          <img
+            src="https://denvercoder1-github-readme-stats.vercel.app/api/pin?username=NsdHso&repo=hospital&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false"
+            alt="hospital"
+            style="width: 100%; max-width: 382px; height: auto; display: block"
+          />
+        </a>
+        <a href="https://github.com/nsdhso/liburg">
+          <img
+            src="https://denvercoder1-github-readme-stats.vercel.app/api/pin?username=nsdhso&repo=liburg&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false"
+            alt="liburg"
+            style="width: 100%; max-width: 382px; height: auto; display: block"
+          />
+        </a>
+      </div>
+    </div>
 
 
 hi, i'm [Nechiforel Daivid](https://github.com/NsdHSO/NsdHSO/blob/main/README.md), a passionate self-taught web developer and a freelance software engineer from everywhere.
