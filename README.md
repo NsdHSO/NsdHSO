@@ -1,14 +1,37 @@
-<p align="left">
- <a href="https://github.com/nsdhso/tevet-troc-client"><img width="382" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin?username=NsdHso&repo=tevet-troc-client&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false%22%20alt=%22custom-icon-badges" alt="readme-typing-svg"></a>
+<div style="width: 100%;">
+  <div
+    style="
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(382px, 1fr));
+      justify-content: start;
+      gap: 1rem;
+    "
+  >
+    <a href="https://github.com/nsdhso/tevet-troc-client">
+      <img
+        src="https://denvercoder1-github-readme-stats.vercel.app/api/pin?username=NsdHso&repo=tevet-troc-client&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false"
+        alt="tevet-troc-client"
+        style="width: 100%; max-width: 382px; height: auto; display: block"
+      />
+    </a>
 
- <a href="https://github.com/nsdhso/hospital"><img width="382" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin?username=NsdHso&repo=hospital&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false%22%20alt=%22custom-icon-badges" alt="Here is the hospital system backend"></a>
- 
- <a href="https://github.com/NsdHSO/liburg"><img width="382" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin?username=nsdhso&repo=liburg&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false%22%20alt=%22custom-icon-badges" alt="Entry point to librug proj"></a>
-</p>
+    <a href="https://github.com/nsdhso/hospital">
+      <img
+        src="https://denvercoder1-github-readme-stats.vercel.app/api/pin?username=NsdHso&repo=hospital&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false"
+        alt="hospital"
+        style="width: 100%; max-width: 382px; height: auto; display: block"
+      />
+    </a>
 
-<p align="center">
-  <a href="https://github.com/nsdhso"><img src="https://readme-typing-svg.herokuapp.com/?lines=I'm%20Nechiforel%20David%20Samuel;Software-Engineering;Experienced%20with%20Javascript;Always%20learning%20new%20things&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&size=22"></a>
-</p>
+    <a href="https://github.com/nsdhso/liburg">
+      <img
+        src="https://denvercoder1-github-readme-stats.vercel.app/api/pin?username=nsdhso&repo=liburg&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false"
+        alt="liburg"
+        style="width: 100%; max-width: 382px; height: auto; display: block"
+      />
+    </a>
+  </div>
+</div>
 
 
 
