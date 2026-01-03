@@ -5,40 +5,66 @@ const myExperience = MY_EXPERIENCES;
 
 <ul class="exp-container">
     {myExperience.map((item) => (
-            <li class=" icon-exp" set:html={item.icon}></li>
+            <li class="icon-exp" set:html={item.icon}></li>
     ))}
 </ul>
+
 <style>
     .exp-container {
         display: grid;
-        grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         justify-content: center;
-        gap: .6rem;
+        gap: 1.5rem;
         padding: 0;
+        margin: 2rem 0;
     }
 
     .icon-exp {
         list-style: none;
-        height: 10rem;
-        display: inline-flex;
+        height: 12rem;
+        display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-        border-radius: 1rem;
-        position: relative;
 
-        &:hover {
-            backdrop-filter: blur(10px);
-            background-color: rgb(255 255 255);
-            cursor: pointer;
-            border-radius: 1rem;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: rgba(var(--gray-light), 0.1);
+        border: 1px solid rgba(var(--gray), 0.1);
+        box-shadow: var(--box-shadow);
+        border-radius: 1rem;
+
+        padding: 2rem;
+        transition: all 0.3s ease;
+        overflow: hidden;
+    }
+
+    .icon-exp:hover {
+        cursor: pointer;
+        transform: translateY(-5px);
+        background-color: rgba(var(--gray-light), 0.2);
+        border-color: var(--accent);
+    }
+
+    .icon-exp :global(svg) {
+        position: static !important;
+        width: 100% !important;
+        height: 100% !important;
+
+        object-fit: contain;
+
+        transition: transform 0.3s ease;
+    }
+
+    .icon-exp:hover :global(svg) {
+        transform: scale(1.1);
+    }
+
+    /* Dark Mode: Ensure dark logos are visible */
+    @media (prefers-color-scheme: dark) {
+        .icon-exp {
+            background-color: rgba(255, 255, 255, 0.03);
         }
 
-        svg {
-            width: calc(100% - 2rem);
-            position: absolute;
-            height: 100%;
+        .icon-exp :global(svg) {
+            filter: brightness(0) invert(1);
         }
     }
 </style>

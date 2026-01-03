@@ -4,19 +4,6 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
-:root {
-    --accent: #2337ff;
-    --accent-dark: #000d8a;
-    --black: 15, 18, 25;
-    --gray: 96, 115, 159;
-    --gray-light: 229, 233, 240;
-    --gray-dark: 34, 41, 57;
-    --gray-gradient: rgba(var(--gray-light), 50%), #fff;
-    --gray-gradient-reverse: var(--gray-light), rgba(var(--gray-dark), 50%);
-    --box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-    0 16px 32px rgba(var(--gray), 33%);
-}
-
 @font-face {
     font-family: 'Atkinson';
     src: url('/NsdHSO/fonts/atkinson-regular.woff') format('woff');
@@ -32,21 +19,53 @@
     font-style: normal;
     font-display: swap;
 }
-html{
+:root {
+    --accent: #2337ff;
+    --accent-dark: #000d8a;
+    --black: 15, 18, 25;
+    --gray: 96, 115, 159;
+    --gray-light: 229, 233, 240;
+    --gray-dark: 34, 41, 57;
+    --gray-gradient: rgba(var(--gray-light), 50%), #fff;
+    --box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
+    0 16px 32px rgba(var(--gray), 33%);
+
+    /* Smooth transition for theme switching */
+    --transition-speed: 0.3s;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --accent: #6b7aff; /* Brighter blue for better visibility on dark */
+        --accent-dark: #99a4ff;
+        --black: 225, 225, 235; /* Off-white for headings */
+        --gray: 150, 160, 190;
+        --gray-light: 34, 41, 57; /* Darker gray for backgrounds/code */
+        --gray-dark: 200, 210, 230; /* Lighter gray for body text */
+
+        /* Dark gradient: from a deep slate to a near-black */
+        --gray-gradient: rgba(15, 18, 25, 100%), rgb(30, 35, 45);
+
+        --box-shadow: 0 2px 6px rgba(0, 0, 0, 50%), 0 8px 24px rgba(0, 0, 0, 60%);
+    }
+}
+html {
     height: 100vh;
 }
+
 body {
     font-family: 'Atkinson', sans-serif;
     margin: 0;
     padding: 0;
     text-align: left;
-    background: linear-gradient(var(--gray-gradient)) no-repeat;
     background-size: 100% 600px;
+    background: rgb(var(--gray-light)) linear-gradient(var(--gray-gradient)) no-repeat;
     word-wrap: break-word;
     overflow-wrap: break-word;
     color: rgb(var(--gray-dark));
     font-size: 20px;
     line-height: 1.7;
+    transition: background var(--transition-speed), color var(--transition-speed);
 }
 
 main {
@@ -130,15 +149,23 @@ img {
 
 code {
     padding: 2px 5px;
-    background-color: rgb(var(--gray-light));
+    background-color: rgba(var(--gray-light), 50%);
+    border: 1px solid rgba(var(--gray), 20%); /* Added subtle border for dark mode depth */
     border-radius: 2px;
+    color: var(--accent); /* Makes inline code pop */
 }
 
 pre {
     padding: 1.5em;
     border-radius: 8px;
+    background-color: rgb(var(--gray-light));
+    border: 1px solid rgba(var(--gray), 10%);
 }
 
+hr {
+    border: none;
+    border-top: 1px solid rgba(var(--gray), 30%);
+}
 pre > code {
     all: unset;
 }
