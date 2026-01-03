@@ -2,10 +2,13 @@
 import { MY_EXPERIENCES } from '../consts';
 const myExperience = MY_EXPERIENCES;
 ---
-
 <ul class="exp-container">
     {myExperience.map((item) => (
-            <li class="icon-exp" set:html={item.icon}></li>
+            <li class="icon-exp" id={item.slug}>
+                <a href={`NsdHSO/blog/${item.slug}`} class="exp-link">
+                    <div class="svg-inner" set:html={item.icon} />
+                </a>
+            </li>
     ))}
 </ul>
 

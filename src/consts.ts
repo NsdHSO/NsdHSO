@@ -38,6 +38,7 @@ d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.0
 
 export const MY_EXPERIENCES = [
     {
+        slug: "bcr",
         title: 'Bcr',
         isCurrent: true,
         icon: `<svg id="Ebene_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 386.54 150.77">
@@ -47,7 +48,7 @@ export const MY_EXPERIENCES = [
 
 
     },
-    {
+    {slug: "cognizant",
         title: 'Cognizant',
         isCurrent: false,
         icon: `
@@ -164,9 +165,9 @@ export const MY_EXPERIENCES = [
 </svg>`
 
 
-    }
-,
+    },
     {
+        slug: "efratech",
         title: 'Efratech',
         isCurrent: false,
         icon: `
