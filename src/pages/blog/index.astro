@@ -19,6 +19,29 @@ const posts = (await getCollection('blog')).sort(
 			main {
 				width: 960px;
 			}
+			main {
+				width: calc(100% - 20em);
+				max-width: 100%;
+
+				-webkit-mask-image: linear-gradient(
+					to bottom,
+					transparent 0%,
+					black 0%,
+					black 90%,
+					transparent 100%
+				);
+				mask-image: linear-gradient(
+					to bottom,
+					transparent 0%,
+					black 0%,
+					black 90%,
+					transparent 100%
+				);
+
+				animation: reveal-top-fade linear forwards;
+				animation-timeline: scroll();
+				animation-range: 0px 100px;
+			}
 			ul {
 				display: flex;
 				flex-wrap: wrap;
@@ -93,7 +116,7 @@ const posts = (await getCollection('blog')).sort(
 					{
 						posts.map((post) => (
 							<li>
-								<a href={`/blog/${post.slug}/`}>
+								<a href={`blog/${post.slug}/`}>
 									<img width={720} height={360} src={post.data.heroImage} alt="" />
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">

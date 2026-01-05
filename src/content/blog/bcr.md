@@ -1,5 +1,5 @@
 ---
-title: 'First post'
+title: 'BCR Experience'
 description: '**BCR · Full-time** *Jun 2022 - Present · 3 yrs 8 mos* *Bucharest, Romania 🇷🇴 · Remote*'
 pubDate: 'Jun 07 2022'
 location: 'Bucharest, Romania 🇷🇴 · Remote'

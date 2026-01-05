@@ -1,13 +1,13 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 
-export const SITE_TITLE = 'NsdHso Profile';
+export const SITE_TITLE = 'NsdHSO Profile';
 export const SITE_DESCRIPTION = 'Welcome to my website!';
 
 export const SOCIAL_MEDIA_LINKS = [
     {
         title: 'Link',
-        span: 'Go to NsdHso\'s GitHub repo',
+        span: 'Go to NsdHSO\'s GitHub repo',
         link: 'https://github.com/NsdHSO',
         icon: `<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/github"
 ><path
@@ -19,7 +19,7 @@ d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.0
     ,
     {
         title: 'Link',
-        span: 'Go to NsdHso\'s Twiter',
+        span: 'Go to NsdHSO\'s Twiter',
         link: 'https://twitter.com/nsdhso',
         icon: `
         

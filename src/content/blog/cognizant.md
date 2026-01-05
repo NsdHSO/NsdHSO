@@ -1,5 +1,5 @@
 ---
-title: 'Cognizant Softvision'
+title: 'Cognizant Softvision Experience'
 role: 'Software Engineer'
 description: 'Cognizant Softvision · Full-time Nov 2021 - Jun 2022 · 8 mos Timișoara, Romania 🇷🇴 · Remote'
 pubDate: 'Nov 01 2021'
