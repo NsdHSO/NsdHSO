@@ -4,8 +4,10 @@ const myExperience = MY_EXPERIENCES;
 ---
 <ul class="exp-container">
     {myExperience.map((item) => (
-            <li class="icon-exp" id={item.slug}>
-                <a href={`blog/${item.slug}`} class="exp-link">
+            <li class="icon-exp" id={item.slug}
+                transition:name={`hero-${item.slug}`}>
+
+                <a href={`/NsdHSO/blog/${item.slug}`} class="exp-link">
                     <div class="svg-inner" set:html={item.icon} />
                 </a>
             </li>
