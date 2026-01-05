@@ -20,17 +20,16 @@ const {
     <BaseHead title={title} description={description}/>
     <style>
 
+        .hero-image, prose{
+            width: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         main {
             mask-size: 100% 100%;
             mask-repeat: no-repeat;
             max-width: 100% !important;
-        }
-
-        .prose, .hero-image {
-            width: 720px;
-            margin: auto;
-            padding: 1em 1em 10rem;
-            color: rgb(var(--gray-dark));
         }
 
         .title {
