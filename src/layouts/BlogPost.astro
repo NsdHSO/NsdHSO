@@ -39,22 +39,35 @@ const {
             will-change: transform, opacity;
         }
 
-
         main {
             width: calc(100% - 2em);
             max-width: 100%;
             margin: 0;
 
-            -webkit-mask-image: linear-gradient(to bottom,
-            black 0%,
-            black 90%,
-            transparent 100%
+            -webkit-mask-image: linear-gradient(
+                    to bottom,
+                    transparent 0%,
+                    black 0%,
+                    black 90%,                 
+                    transparent 100%           
             );
-            mask-image: linear-gradient(to bottom,
-            black 0%,
-            black 90%,
-            transparent 100%
+            mask-image: linear-gradient(
+                    to bottom,
+                    transparent 0%,
+                    black 0%,
+                    black 90%,
+                    transparent 100%
             );
+
+            animation: reveal-top-fade linear forwards;
+            animation-timeline: scroll();
+            animation-range: 0px 100px;
+        }
+
+       
+        main {
+            mask-size: 100% 100%;
+            mask-repeat: no-repeat;
         }
 
         .prose {
