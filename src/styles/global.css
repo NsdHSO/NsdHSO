@@ -100,24 +100,66 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
 }
 
-h1 { font-size: 3.052em; }
-h2 { font-size: 2.441em; }
-h3 { font-size: 1.953em; }
-h4 { font-size: 1.563em; }
-h5 { font-size: 1.25em; }
+h1 {
+    font-size: 3.052em;
+}
 
-strong, b { font-weight: 700; }
-a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
+h2 {
+    font-size: 2.441em;
+}
 
-p { margin-bottom: 1em; }
-.prose p { margin-bottom: 2em; }
+h3 {
+    font-size: 1.953em;
+}
+
+h4 {
+    font-size: 1.563em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+strong, b {
+    font-weight: 700;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+.prose p {
+    margin-bottom: 2em;
+}
 
 /* Elements */
-textarea { width: 100%; font-size: 1rem; }
-input { font-size: 1rem; }
-table { width: 100%; }
-img { max-width: 100%; height: auto; border-radius: 0.5rem; }
+textarea {
+    width: 100%;
+    font-size: 1rem;
+}
+
+input {
+    font-size: 1rem;
+}
+
+table {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
 
 code {
     padding: 0.125rem 0.3125rem;
@@ -134,7 +176,9 @@ pre {
     overflow-x: auto;
 }
 
-pre > code { all: unset; }
+pre > code {
+    all: unset;
+}
 
 blockquote {
     border-left: 0.25rem solid var(--accent);
@@ -175,6 +219,12 @@ footer {
 
 /* Mobile Adjustments */
 @media (max-width: 600px) {
-    h1 { font-size: 2.2rem; }
-    main { padding: 1.5rem 1rem; }
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    main {
+        padding: 1.5rem 1rem;
+        width: 100% !important;
+    }
 }
