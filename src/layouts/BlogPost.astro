@@ -20,11 +20,21 @@ const {
     <BaseHead title={title} description={description}/>
     <style>
 
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .hero-image, prose{
             width: inherit;
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        .prose{
+            max-width: 720px;
         }
         main {
             mask-size: 100% 100%;
