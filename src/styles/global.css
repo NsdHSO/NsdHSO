@@ -27,8 +27,8 @@
     --gray-light: 229, 233, 240;
     --gray-dark: 34, 41, 57;
     --gray-gradient: rgba(var(--gray-light), 50%), #fff;
-    --box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-    0 16px 32px rgba(var(--gray), 33%);
+    --box-shadow: 0 0.125rem 0.375rem rgba(var(--gray), 25%), 0 0.5rem 1.5rem rgba(var(--gray), 33%),
+    0 1rem 2rem rgba(var(--gray), 33%);
 
     /* Smooth transition for theme switching */
     --transition-speed: 0.3s;
@@ -46,7 +46,7 @@
         /* Dark gradient: from a deep slate to a near-black */
         --gray-gradient: rgba(15, 18, 25, 100%), rgb(30, 35, 45);
 
-        --box-shadow: 0 2px 6px rgba(0, 0, 0, 50%), 0 8px 24px rgba(0, 0, 0, 60%);
+        --box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 50%), 0 0.5rem 1.5rem rgba(0, 0, 0, 60%);
     }
 }
 html {
@@ -58,22 +58,23 @@ body {
     margin: 0;
     padding: 0;
     text-align: left;
-    background-size: 100% 600px;
+    background-size: 100% 37.5rem;
     background: rgb(var(--gray-light)) linear-gradient(var(--gray-gradient)) no-repeat;
     word-wrap: break-word;
     overflow-wrap: break-word;
     color: rgb(var(--gray-dark));
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.7;
     transition: background var(--transition-speed), color var(--transition-speed);
+    height: inherit;
 }
 
 main {
-    width: 720px;
+    width: 45rem;
     max-width: calc(100% - 2em);
     margin: auto;
     padding: 3em 1em;
-    height: calc(100vh - 18.4rem - 32px - 32px);
+    height: calc(100vh - 5.1875rem - 16.5rem);
     overflow: auto
 }
 
@@ -131,11 +132,11 @@ p {
 
 textarea {
     width: 100%;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 input {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 table {
@@ -145,47 +146,47 @@ table {
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 code {
-    padding: 2px 5px;
+    padding: 0.125rem 0.3125rem;
     background-color: rgba(var(--gray-light), 50%);
-    border: 1px solid rgba(var(--gray), 20%); /* Added subtle border for dark mode depth */
-    border-radius: 2px;
+    border: 0.0625rem solid rgba(var(--gray), 20%); /* Added subtle border for dark mode depth */
+    border-radius: 0.125rem;
     color: var(--accent); /* Makes inline code pop */
 }
 
 pre {
     padding: 1.5em;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background-color: rgb(var(--gray-light));
-    border: 1px solid rgba(var(--gray), 10%);
+    border: 0.0625rem solid rgba(var(--gray), 10%);
 }
 
 hr {
     border: none;
-    border-top: 1px solid rgba(var(--gray), 30%);
+    border-top: 0.0625rem solid rgba(var(--gray), 30%);
 }
 pre > code {
     all: unset;
 }
 
 blockquote {
-    border-left: 4px solid var(--accent);
-    padding: 0 0 0 20px;
-    margin: 0px;
+    border-left: 0.25rem solid var(--accent);
+    padding: 0 0 0 1.25rem;
+    margin: 0rem;
     font-size: 1.333em;
 }
 
 hr {
     border: none;
-    border-top: 1px solid rgb(var(--gray-light));
+    border-top: 0.0625rem solid rgb(var(--gray-light));
 }
 
-@media (max-width: 720px) {
+@media (max-width: 45rem) {
     body {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     main {
@@ -198,13 +199,13 @@ hr {
     padding: 0;
     margin: 0;
     position: absolute !important;
-    height: 1px;
-    width: 1px;
+    height: 0.0625rem;
+    width: 0.0625rem;
     overflow: hidden;
-    /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
-    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 0.0625rem box */
+    clip: rect(0.0625rem 0.0625rem 0.0625rem 0.0625rem);
     /* maybe deprecated but we need to support legacy browsers */
-    clip: rect(1px, 1px, 1px, 1px);
+    clip: rect(0.0625rem, 0.0625rem, 0.0625rem, 0.0625rem);
     /* modern browsers, clip-path works inwards from each corner */
     clip-path: inset(50%);
     /* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
