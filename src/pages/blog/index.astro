@@ -21,9 +21,11 @@ const posts = (await getCollection('blog')).sort(
         }
 
         main {
-            width: calc(100% - 20em);
+            width: 100%;
             max-width: 100%;
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
             -webkit-mask-image: linear-gradient(
                     to bottom,
                     transparent 0%,
@@ -41,7 +43,12 @@ const posts = (await getCollection('blog')).sort(
 
             animation: reveal-top-fade linear forwards;
             animation-timeline: scroll();
-            animation-range: 0px 100px;
+            animation-range: 0rem 6.25rem;
+
+            section {
+                width: 45rem;
+                margin: auto;
+            }
         }
 
         ul {
@@ -123,6 +130,7 @@ const posts = (await getCollection('blog')).sort(
                 font-size: 1.563em;
             }
         }
+
         /* Mobile Adjustments */
         @media (max-width: 600px) {
             h1 {

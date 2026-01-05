@@ -20,16 +20,14 @@ const {
     <BaseHead title={title} description={description}/>
     <style>
 
-
-
         main {
             mask-size: 100% 100%;
             mask-repeat: no-repeat;
+            max-width: 100% !important;
         }
 
-        .prose {
+        .prose, .hero-image {
             width: 720px;
-            max-width: calc(100% - 2em);
             margin: auto;
             padding: 1em 1em 10rem;
             color: rgb(var(--gray-dark));
