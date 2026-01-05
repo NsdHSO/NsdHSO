@@ -6,11 +6,18 @@ import SocialMedia from './SocialMedia.astro';
 
 <header>
     <nav>
-        <a role="button" href="/NsdHSO">
-            <h2>
-                {SITE_TITLE}
-            </h2>
-        </a>
+        <div class="actions">
+            <a role="button" href="/NsdHSO">
+                <h2>
+                    {SITE_TITLE}
+                </h2>
+            </a>
+            <a role="button" href="/NsdHSO/blog">
+                <h2>
+                    Blog
+                </h2>
+            </a>
+        </div>
         <div class="internal-links">
             <HeaderLink role="button" href="/NsdHSO">Home</HeaderLink>
         </div>
@@ -30,6 +37,14 @@ import SocialMedia from './SocialMedia.astro';
         font-size: 1em;
     }
 
+    .actions{
+        display: flex;
+    }
+    .actions:hover {
+        cursor: pointer;
+        background-color: rgba(var(--gray-light), 0.2);
+        border-color: var(--accent);
+    }
     h2 a,
     h2 a.active {
         text-decoration: none;
