@@ -46,34 +46,36 @@
     }
 }
 
-html {
-    /* min-height ensures the background covers the whole page */
-    min-height: 100%;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents the whole page from scrolling */
 }
 
 body {
     font-family: 'Atkinson', sans-serif;
-    margin: 0;
-    padding: 0;
     text-align: left;
     background: rgb(var(--gray-light)) linear-gradient(var(--gray-gradient)) no-repeat;
-    background-attachment: fixed; /* Keeps background steady while scrolling */
-    word-wrap: break-word;
-    overflow-wrap: break-word;
     color: rgb(var(--gray-dark));
     font-size: 1.25rem;
     line-height: 1.7;
     transition: background var(--transition-speed), color var(--transition-speed);
 
-    /* Flexbox Layout to fix the footer */
+    /* Layout Setup */
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+}
+
+header {
+    flex-shrink: 0; /* Ensures header doesn't squash */
 }
 
 main {
-    /* flex: 1 pushes the footer to the bottom */
-    flex: 1;
+    flex: 1; /* Takes up all available space between header and footer */
+    overflow-y: auto; /* This is where the scroll happens */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+
     width: 100%;
     max-width: 45rem;
     margin: 0 auto;
@@ -81,7 +83,17 @@ main {
     box-sizing: border-box;
 }
 
-/* Headers */
+footer {
+    flex-shrink: 0; /* Ensures footer doesn't squash */
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    max-width: 45rem;
+    margin: 0 auto;
+    border-top: 0.0625rem solid rgba(var(--gray), 10%);
+}
+
+/* Typography */
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 0.5rem 0;
     color: rgb(var(--black));
@@ -110,7 +122,6 @@ img { max-width: 100%; height: auto; border-radius: 0.5rem; }
 code {
     padding: 0.125rem 0.3125rem;
     background-color: rgba(var(--gray-light), 50%);
-    border: 0.0625rem solid rgba(var(--gray), 20%);
     border-radius: 0.125rem;
     color: var(--accent);
 }
@@ -151,7 +162,7 @@ footer {
 
 /* Accessibility */
 .sr-only {
-    position: absolute !important;
+    position: absolute;
     width: 1px;
     height: 1px;
     padding: 0;
@@ -162,12 +173,8 @@ footer {
     border: 0;
 }
 
-/* Fix for mobile screens */
+/* Mobile Adjustments */
 @media (max-width: 600px) {
-    h1 {
-        font-size: 2.2rem; /* Shrinks the title so it fits on mobile */
-    }
-    main {
-        padding: 2rem 1rem;
-    }
+    h1 { font-size: 2.2rem; }
+    main { padding: 1.5rem 1rem; }
 }
