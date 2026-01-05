@@ -77,13 +77,33 @@ main {
     overflow-y: auto; /* This is where the scroll happens */
     -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 
-    width: 100%;
     max-width: 45rem;
     margin: 0 auto;
     padding: 3rem 1rem;
     box-sizing: border-box;
-}
+    width: calc(100% - 2em);
+    -webkit-mask-image: linear-gradient(
+            to bottom,
+            transparent 0%,
+            black 0%,
+            black 90%,
+            transparent 100%
+    );
+    mask-image: linear-gradient(
+            to bottom,
+            transparent 0%,
+            black 0%,
+            black 90%,
+            transparent 100%
+    );
 
+    animation: reveal-top-fade linear forwards;
+    animation-timeline: scroll();
+    animation-range: 0px 100px;
+}
+main {
+
+}
 footer {
     flex-shrink: 0; /* Ensures footer doesn't squash */
     padding: 1rem;

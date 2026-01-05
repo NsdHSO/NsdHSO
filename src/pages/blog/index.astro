@@ -123,6 +123,17 @@ const posts = (await getCollection('blog')).sort(
                 font-size: 1.563em;
             }
         }
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            main {
+                padding: 1.5rem 1rem;
+                width: 100% !important;
+            }
+        }
     </style>
 </head>
 <body>
