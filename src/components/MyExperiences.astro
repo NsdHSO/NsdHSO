@@ -61,8 +61,7 @@ const myOpenSource = OPEN_SOURCE;
         border: 1px solid rgba(var(--gray), 0.1);
         box-shadow: var(--box-shadow);
         border-radius: 1rem;
-
-        padding: 2rem;
+        padding: 0;
         transition: all 0.3s ease;
         overflow: hidden;
     }
@@ -98,5 +97,20 @@ const myOpenSource = OPEN_SOURCE;
         .icon-exp :global(svg) {
             filter: brightness(0) invert(1);
         }
+    }
+
+    .exp-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .svg-inner {
+        pointer-events: none;
     }
 </style>
