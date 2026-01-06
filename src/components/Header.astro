@@ -35,14 +35,12 @@ const isBlog = cleanPath.includes('/blog');
 </header>
 
 <style>
-    .social-links{
-        margin: 0 !important;
-    }
     .container-header{
         display: flex;
         justify-content: space-between;
         align-items: end;
         padding: 0 1rem;
+        gap: 1rem;
     }
     header {
         background-color: #111827;
@@ -60,6 +58,7 @@ const isBlog = cleanPath.includes('/blog');
         flex-direction: column;
         align-items: center;
         text-decoration: none;
+        justify-content: flex-end;
     }
 
     h2 {
@@ -70,7 +69,7 @@ const isBlog = cleanPath.includes('/blog');
     }
 
     .active h2 {
-        color: white;/
+        color: white;
     }
 
     .line {
