@@ -1,8 +1,8 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import SocialMedia from './SocialMedia.astro';
-
 import { SITE_TITLE } from '../consts';
+
 const { pathname } = Astro.url;
 const cleanPath = pathname.replace(/\/$/, "");
 
@@ -12,7 +12,7 @@ const isBlog = cleanPath.includes('/blog');
 
 <header>
     <div class="container-header">
-        <nav>
+        <nav id="nav-menu">
             <div class="nav-links">
                 <a class={`actions ${isHome ? 'active' : ''}`} href="/NsdHSO">
                     <h2>{SITE_TITLE}</h2>
@@ -23,28 +23,77 @@ const isBlog = cleanPath.includes('/blog');
                     <h2>Blog</h2>
                     {isBlog && <div class="line" transition:name="menu-line" />}
                 </a>
+
+                <div class="mobile-only-content">
+                    <HeaderLink href="/NsdHSO">Home</HeaderLink>
+                    <SocialMedia />
+                </div>
             </div>
         </nav>
-        <div class="actions">
-            <HeaderLink role="button" href="/NsdHSO">Home</HeaderLink>
+
+        <div class="desktop-actions">
+            <div class="actions">
+                <HeaderLink role="button" href="/NsdHSO">Home</HeaderLink>
+            </div>
+            <div class="actions">
+                <SocialMedia/>
+            </div>
         </div>
-        <div class="actions">
-            <SocialMedia/>
-        </div>
+
+        <button id="menu-toggle" aria-label="Toggle Menu" type="button">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                <circle cx="12" cy="5" r="2" />
+                <circle cx="12" cy="12" r="2" />
+                <circle cx="12" cy="19" r="2" />
+            </svg>
+        </button>
     </div>
 </header>
 
+<script>
+    /**
+     * Professional Engineer Note:
+     * When using View Transitions, we must listen for 'astro:page-load'
+     * to re-attach event listeners after the DOM is swapped.
+     */
+    const initMenu = () => {
+        const btn = document.getElementById('menu-toggle');
+        const menu = document.getElementById('nav-menu');
+
+        if (btn && menu) {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                menu.classList.toggle('is-open');
+            });
+
+            // Close menu if clicking outside
+            document.addEventListener('click', (e) => {
+                if (!menu.contains(e.target as Node) && !btn.contains(e.target as Node)) {
+                    menu.classList.remove('is-open');
+                }
+            });
+        }
+    };
+
+    document.addEventListener('astro:page-load', initMenu);
+</script>
+
 <style>
-    .container-header{
+    header {
+        background-color: #111827;
+        padding: 0 2em;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .container-header {
         display: flex;
         justify-content: space-between;
         align-items: end;
         padding: 0 1rem;
         gap: 1rem;
-    }
-    header {
-        background-color: #111827;
-        padding: 0 2em;
+        height: 64px;
     }
 
     .nav-links {
@@ -59,6 +108,13 @@ const isBlog = cleanPath.includes('/blog');
         align-items: center;
         text-decoration: none;
         justify-content: flex-end;
+    }
+
+    .desktop-actions {
+        display: flex;
+        gap: 1rem;
+        align-items: end;
+        padding-bottom: 8px;
     }
 
     h2 {
@@ -83,5 +139,68 @@ const isBlog = cleanPath.includes('/blog');
 
     .actions:hover h2 {
         color: white;
+    }
+
+    #menu-toggle {
+        display: none;
+        background: transparent;
+        border: none;
+        color: #94a3b8;
+        cursor: pointer;
+        padding: 10px;
+        align-self: center;
+    }
+
+    .mobile-only-content {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .desktop-actions {
+            display: none;
+        }
+
+        #menu-toggle {
+            display: block;
+        }
+
+        #nav-menu {
+            display: none;
+            position: absolute;
+            top: 64px;
+            right: 1rem;
+            background-color: #1f2937;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+            min-width: 200px;
+            border: 1px solid #374151;
+        }
+
+        #nav-menu.is-open {
+            display: block;
+        }
+
+        .nav-links {
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .mobile-only-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 100%;
+            padding-top: 1rem;
+            border-top: 1px solid #374151;
+        }
+
+        .line {
+            width: 4px;
+            height: 100%;
+            left: -15px;
+            bottom: 0;
+        }
     }
 </style>
