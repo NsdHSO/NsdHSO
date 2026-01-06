@@ -41,10 +41,10 @@ const isBlog = cleanPath.includes('/blog');
         </div>
 
         <button id="menu-toggle" aria-label="Toggle Menu" type="button">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                <circle cx="12" cy="5" r="2" />
-                <circle cx="12" cy="12" r="2" />
-                <circle cx="12" cy="19" r="2" />
+            <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="38">
+                <circle cx="14" cy="5" r="3" />
+                <circle cx="14" cy="14" r="3" />
+                <circle cx="14" cy="23" r="3" />
             </svg>
         </button>
     </div>
@@ -159,7 +159,6 @@ const isBlog = cleanPath.includes('/blog');
         }
 
         #nav-menu {
-            /* 1. Remove display: none */
             display: block;
             position: absolute;
             top: 64px;
@@ -170,22 +169,17 @@ const isBlog = cleanPath.includes('/blog');
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
             min-width: 200px;
             border: 1px solid #374151;
-
-            /* 2. Set Initial State for Transition */
             opacity: 0;
             visibility: hidden;
             transform: translateY(-10px) scale(0.95);
             transform-origin: top right;
-            pointer-events: none; /* Prevents clicking links while hidden */
-
-            /* 3. Define the Transition */
+            pointer-events: none;
             transition:
                     opacity 0.2s ease-out,
                     transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
                     visibility 0.2s;
         }
 
-        /* 4. Define the Appear State */
         #nav-menu.is-open {
             opacity: 1;
             visibility: visible;
