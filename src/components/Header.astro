@@ -51,11 +51,6 @@ const isBlog = cleanPath.includes('/blog');
 </header>
 
 <script>
-    /**
-     * Professional Engineer Note:
-     * When using View Transitions, we must listen for 'astro:page-load'
-     * to re-attach event listeners after the DOM is swapped.
-     */
     const initMenu = () => {
         const btn = document.getElementById('menu-toggle');
         const menu = document.getElementById('nav-menu');
@@ -66,7 +61,6 @@ const isBlog = cleanPath.includes('/blog');
                 menu.classList.toggle('is-open');
             });
 
-            // Close menu if clicking outside
             document.addEventListener('click', (e) => {
                 if (!menu.contains(e.target as Node) && !btn.contains(e.target as Node)) {
                     menu.classList.remove('is-open');
@@ -165,7 +159,8 @@ const isBlog = cleanPath.includes('/blog');
         }
 
         #nav-menu {
-            display: none;
+            /* 1. Remove display: none */
+            display: block;
             position: absolute;
             top: 64px;
             right: 1rem;
@@ -175,10 +170,27 @@ const isBlog = cleanPath.includes('/blog');
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
             min-width: 200px;
             border: 1px solid #374151;
+
+            /* 2. Set Initial State for Transition */
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px) scale(0.95);
+            transform-origin: top right;
+            pointer-events: none; /* Prevents clicking links while hidden */
+
+            /* 3. Define the Transition */
+            transition:
+                    opacity 0.2s ease-out,
+                    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+                    visibility 0.2s;
         }
 
+        /* 4. Define the Appear State */
         #nav-menu.is-open {
-            display: block;
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) scale(1);
+            pointer-events: auto;
         }
 
         .nav-links {
