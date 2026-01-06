@@ -1,70 +1,88 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
 import SocialMedia from './SocialMedia.astro';
+
+import { SITE_TITLE } from '../consts';
+const { pathname } = Astro.url;
+const cleanPath = pathname.replace(/\/$/, "");
+
+const isHome = cleanPath === '/NsdHSO' || cleanPath === '';
+const isBlog = cleanPath.includes('/blog');
 ---
 
 <header>
-    <nav>
+    <div class="container-header">
+        <nav>
+            <div class="nav-links">
+                <a class={`actions ${isHome ? 'active' : ''}`} href="/NsdHSO">
+                    <h2>{SITE_TITLE}</h2>
+                    {isHome && <div class="line" transition:name="menu-line" />}
+                </a>
+
+                <a class={`actions ${isBlog ? 'active' : ''}`} href="/NsdHSO/blog">
+                    <h2>Blog</h2>
+                    {isBlog && <div class="line" transition:name="menu-line" />}
+                </a>
+            </div>
+        </nav>
         <div class="actions">
-            <a role="button" href="/NsdHSO">
-                <h2>
-                    {SITE_TITLE}
-                </h2>
-            </a>
-            <a role="button" href="/NsdHSO/blog">
-                <h2>
-                    Blog
-                </h2>
-            </a>
-        </div>
-        <div class="internal-links">
             <HeaderLink role="button" href="/NsdHSO">Home</HeaderLink>
         </div>
-        <SocialMedia/>
-    </nav>
+        <div class="actions">
+            <SocialMedia/>
+        </div>
+    </div>
 </header>
+
 <style>
+    .social-links{
+        margin: 0 !important;
+    }
+    .container-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding: 0 1rem;
+    }
     header {
-        margin: 0;
-        padding: 0 1em;
-        background-color: rgba(var(--gray-light), 50%);
-        box-shadow: 0 2px 8px rgba(var(--black), 5%);
+        background-color: #111827;
+        padding: 0 2em;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .actions {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
     }
 
     h2 {
         margin: 0;
-        font-size: 1em;
+        color: #94a3b8;
+        font-size: 1.1em;
+        transition: color 0.3s ease;
     }
 
-    .actions{
-        display: flex;
-    }
-    .actions:hover {
-        cursor: pointer;
-        background-color: rgba(var(--gray-light), 0.2);
-        border-color: var(--accent);
-    }
-    h2 a,
-    h2 a.active {
-        text-decoration: none;
+    .active h2 {
+        color: white;/
     }
 
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .line {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #6366f1;
+        border-radius: 2px;
     }
 
-    nav a {
-        padding: 1em 0.5em;
-        color: var(--black);
-        border-bottom: 4px solid transparent;
-        text-decoration: none;
-    }
-
-    nav a.active {
-        text-decoration: none;
-        border-bottom-color: var(--accent);
+    .actions:hover h2 {
+        color: white;
     }
 </style>

@@ -3,10 +3,9 @@ import { SOCIAL_MEDIA_LINKS } from '../consts';
 const socialLink = SOCIAL_MEDIA_LINKS;
 ---
 
-<section>
-    <ul class="social-links">
-        {
-            socialLink.map((item, index) => (
+<ul class="social-links">
+    {
+        socialLink.map((item, index) => (
                 <li tabindex="0">
                     <a role="button" href={item.link}>
                         <span class="sr-only">{item.span}</span>
@@ -16,23 +15,32 @@ const socialLink = SOCIAL_MEDIA_LINKS;
                         </span>
                     </a>
                 </li>
-            ))
-        }
-    </ul>
-</section>
+        ))
+    }
+</ul>
 <style>
     .social-links {
-        display: flex;
-        justify-content: center;
-        gap: 1em;
-        margin: 1em;
+        text-align: center;
+
+        margin: 0;
         padding: 0 !important;
-        li{
-            list-style: none;
+        list-style: none;
+        font-size: 0;
+
+        li {
+            display: inline-block;
+            margin: 0 0.5rem;
+            font-size: .5rem;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 
     .social-links a {
+        /* 5. Make the anchor a block so the whole area is clickable */
+        display: block;
         text-decoration: none;
         color: rgb(var(--gray));
     }
@@ -40,5 +48,4 @@ const socialLink = SOCIAL_MEDIA_LINKS;
     .social-links a:hover {
         color: rgb(var(--gray-dark));
     }
-
 </style>
