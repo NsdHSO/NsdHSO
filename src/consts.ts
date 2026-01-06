@@ -36,6 +36,14 @@ d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.0
 
 ];
 
+export const OPEN_SOURCE=[
+    {
+        title: 'Analysis',
+        slug: 'analysis',
+        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"512\" height=\"512\" viewBox=\"0 0 24 24\"><path fill=\"var(--green)\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"0.3\" d=\"M16 21.2a10 10 0 1 0-8 0l2.4-6.1a3.5 3.5 0 1 1 3.2 0Z\"/></svg>"
+    }
+]
+
 export const MY_EXPERIENCES = [
     {
         slug: "bcr",

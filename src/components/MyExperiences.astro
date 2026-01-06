@@ -1,20 +1,46 @@
 ---
-import { MY_EXPERIENCES } from '../consts';
+import { MY_EXPERIENCES, OPEN_SOURCE } from '../consts';
 const myExperience = MY_EXPERIENCES;
+const myOpenSource = OPEN_SOURCE;
 ---
-<ul class="exp-container">
-    {myExperience.map((item) => (
-            <li class="icon-exp" id={item.slug}
-                transition:name={`hero-${item.slug}`}>
+<section class="container">
+    <section>
+        <p>Daily Based</p>
 
-                <a href={`/NsdHSO/blog/${item.slug}`} class="exp-link">
-                    <div class="svg-inner" set:html={item.icon} />
-                </a>
-            </li>
-    ))}
-</ul>
+        <ul class="exp-container">
+            {myExperience.map((item) => (
+                    <li class="icon-exp" id={item.slug}
+                        transition:name={`hero-${item.slug}`}>
 
+                        <a href={`/NsdHSO/blog/${item.slug}`} class="exp-link">
+                            <div class="svg-inner" set:html={item.icon}/>
+                        </a>
+                    </li>
+            ))}
+        </ul>
+    </section>
+    <section class="open-source">
+        <p>Free Time / Open source</p>
+        <ul class="exp-container">
+            {myOpenSource.map((item) => (
+                    <li class="icon-exp" id={item.slug}
+                        transition:name={`hero-${item.slug}`}>
+
+                        <a href={`/NsdHSO/blog/${item.slug}`} class="exp-link">
+                            <div class="svg-inner" set:html={item.icon}/>
+                        </a>
+                    </li>
+            ))}
+        </ul>
+    </section>
+</section>
 <style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
     .exp-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -60,6 +86,7 @@ const myExperience = MY_EXPERIENCES;
 
     .icon-exp:hover :global(svg) {
         transform: scale(1.1);
+        filter: brightness(1);
     }
 
     /* Dark Mode: Ensure dark logos are visible */
