@@ -21,7 +21,7 @@ jobs:
           committer_message: "chore: update github metrics [skip ci]"
           user: NsdHSO
           template: classic
-          base: header, activity, community, repositories, metadata
+          base: header, activity, community, repositories
           config_timezone: Europe/Bucharest
           config_display: large
 
@@ -34,13 +34,13 @@ jobs:
           plugin_achievements_threshold: C
           plugin_achievements_only: >-
             polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
-            scripter, packager, explorer, infographile, manager
+            scripter, packager, explorer, infographile
             
-          # Fixed Habits (Newer version of metrics handles the 'author' bug better)
+          # Habits
           plugin_habits: yes
-          plugin_habits_facts: yes
-          plugin_habits_charts: no
-          plugin_habits_days: 14 # Limiting days can help avoid API timeouts
+          plugin_habits_facts: no      # Set this to 'no' to avoid the crash
+          plugin_habits_charts: yes    # You can turn charts on instead
+          plugin_habits_days: 14
 
           # StackOverflow
           plugin_stackoverflow: yes
