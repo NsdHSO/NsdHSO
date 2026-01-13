@@ -29,18 +29,10 @@ jobs:
           plugin_introduction_title: yes
 
           # Fixed Achievements
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_achievements_threshold: C
-          plugin_achievements_only: >-
-            polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
-            scripter, packager, explorer, infographile
+          plugin_achievements: false
             
           # Habits
-          plugin_habits: yes
-          plugin_habits_facts: no      # Set this to 'no' to avoid the crash
-          plugin_habits_charts: yes    # You can turn charts on instead
-          plugin_habits_days: 14
+          plugin_habits: false
 
           # StackOverflow
           plugin_stackoverflow: yes
