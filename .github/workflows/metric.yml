@@ -13,29 +13,34 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: lowlighter/metrics@v3.16
+      - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.GIT_TOKEN }}
           filename: static/github-metrics.*
           config_padding: 0, 20
           committer_message: "chore: update github metrics [skip ci]"
-
-          # Options
           user: NsdHSO
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Bucharest
           config_display: large
+
           plugin_introduction: yes
           plugin_introduction_title: yes
-          
-          # Achievements
+
+          # Fixed Achievements
           plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: C
           plugin_achievements_only: >-
             polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
             scripter, packager, explorer, infographile, manager
-          plugin_achievements_display: compact
-          plugin_achievements_threshold: X
+            
+            # Fixed Habits (Newer version of metrics handles the 'author' bug better)
+            plugin_habits: yes
+            plugin_habits_facts: yes
+            plugin_habits_charts: no
+            plugin_habits_days: 14 # Limiting days can help avoid API timeouts
 
           # StackOverflow
           plugin_stackoverflow: yes
@@ -43,18 +48,13 @@ jobs:
           plugin_stackoverflow_limit: 2
           plugin_stackoverflow_user: 11555908
 
-          # Habits
-          plugin_habits: yes
-          plugin_habits_facts: yes
-          plugin_habits_charts: no
-
           # Followup
           plugin_followup: yes
           plugin_followup_sections: user
           plugin_followup_indepth: yes
 
 
-         # Sponsors
+          # Sponsors
           plugin_sponsors: yes
 
           # Activity
