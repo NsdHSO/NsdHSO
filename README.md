@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/nsdhso"><img src="https://readme-typing-svg.herokuapp.com/?lines=Architectural+Engineer+%7C+7y+exp;+%7C+Functional+Programming+%7C+Rust+%7C+Type-Safe+Design;Security+%7C+Performance+%7C+a11y+%7C+i18n;Polyglot%3A+Rust%2FTS%2FJS%2FC%2B%2B&font=Fira+Code&center=true&width=520&height=50&color=f75c7e&vCenter=true&size=30"></a>
+  <a href="https://github.com/nsdhso"><img src="https://readme-typing-svg.herokuapp.com/?lines=Architectural+Engineer+%7C+7y+exp;+%7C+Functional+Programming+%7C+Rust+%7C+Type-Safe+Design;Security+%7C+Performance+%7C+a11y+%7C+i18n;Polyglot%3A+Rust%2FTS%2FJS%2FC%2B%2B&font=Fira+Code&center=true&width=90&height=50&color=f75c7e&vCenter=true&size=20"></a>
 </p>
 
 ---
