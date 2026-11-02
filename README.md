@@ -13,7 +13,7 @@
 
 **Nechiforel David Samuel** — Architectural Engineer with 7 years designing large-scale systems. Functional programming specialist (Rust, declarative streams, type-driven design). Security & performance-focused code review expert (a11y, i18n, vulnerability assessment). Polyglot: Rust, TypeScript, JavaScript, C++.
 
-- 💼 **Consulting engagements**: Systems architecture, FP migration, security audits, performance optimization → [nechiforelsamuel@yahoo.com](mailto:nechiforelsamuel@yahoo.com)
+- 💼 **Consulting engagements**: Systems architecture, FP migration, security audits, performance optimization → [nechiforelsamuel@gmail.com](mailto:nechiforelsamuel@gmail.com)
 - 💬 **Open to collaboration**: OSS maintainership, technical advisory, code review, mentorship
 - 🏗️ **Workspace architecture**: Multi-crate Rust workspaces (core / data-streams / io-adapters), pure domain logic, declarative stream processors, impure adapters
 
