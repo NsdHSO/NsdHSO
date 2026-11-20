@@ -1,7 +1,7 @@
 <p align="left">
-  <a href="https://github.com/nsdhso/tevet-troc-client"><img width="382" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin?username=NsdHso&repo=tevet-troc-client&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false%22%20alt=%22custom-icon-badges" alt="readme-typing-svg"></a>
-  <a href="https://github.com/nsdhso/hospital"><img width="382" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin?username=NsdHso&repo=hospital&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false%22%20alt=%22custom-icon-badges" alt="readme-typing-svg"></a>
-  <a href="https://github.com/NsdHSO/liburg"><img width="382" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin?username=nsdhso&repo=liburg&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false%22%20alt=%22custom-icon-badges" alt="Entry point to librug proj"></a>
+  <a href="https://github.com/nsdhso/tevet-troc-client"><img width="382" src="https://github-readme-stats.vercel.app/api/pin?username=NsdHso&repo=tevet-troc-client&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false%22%20alt=%22custom-icon-badges" alt="readme-typing-svg"></a>
+  <a href="https://github.com/nsdhso/hospital"><img width="382" src="https://github-readme-stats.vercel.app/api/pin?username=NsdHso&repo=hospital&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false%22%20alt=%22custom-icon-badges" alt="readme-typing-svg"></a>
+  <a href="https://github.com/NsdHSO/liburg"><img width="382" src="https://github-readme-stats.vercel.app/api/pin?username=nsdhso&repo=liburg&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false%22%20alt=%22custom-icon-badges" alt="Entry point to librug proj"></a>
 </p>
 
 <p align="center">
